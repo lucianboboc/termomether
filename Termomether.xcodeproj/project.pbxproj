@@ -1,0 +1,494 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0AB1E6BFC8F7254EAB548638 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA1618832A1774AABA8673B2 /* Pods.framework */; };
+		67EFCADD1CD680970057C5E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67EFCADC1CD680970057C5E3 /* AppDelegate.swift */; };
+		67EFCADF1CD680970057C5E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67EFCADE1CD680970057C5E3 /* ViewController.swift */; };
+		67EFCAE21CD680970057C5E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67EFCAE01CD680970057C5E3 /* Main.storyboard */; };
+		67EFCAE41CD680970057C5E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67EFCAE31CD680970057C5E3 /* Assets.xcassets */; };
+		67EFCAE71CD680970057C5E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67EFCAE51CD680970057C5E3 /* LaunchScreen.storyboard */; };
+		67EFCAF21CD680970057C5E3 /* TermometherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67EFCAF11CD680970057C5E3 /* TermometherTests.swift */; };
+		67EFCAFD1CD687A00057C5E3 /* API_KEY in Resources */ = {isa = PBXBuildFile; fileRef = 67EFCAFC1CD687A00057C5E3 /* API_KEY */; };
+		67EFCAFF1CD68B6D0057C5E3 /* WeatherDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67EFCAFE1CD68B6D0057C5E3 /* WeatherDatasource.swift */; };
+		67EFCB031CD69B4D0057C5E3 /* LBLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67EFCB021CD69B4C0057C5E3 /* LBLocation.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		67EFCAEE1CD680970057C5E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 67EFCAD11CD680960057C5E3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 67EFCAD81CD680970057C5E3;
+			remoteInfo = Termomether;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		322DEA8048408A8A60898664 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		67EFCAD91CD680970057C5E3 /* Termomether.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Termomether.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		67EFCADC1CD680970057C5E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		67EFCADE1CD680970057C5E3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		67EFCAE11CD680970057C5E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		67EFCAE31CD680970057C5E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		67EFCAE61CD680970057C5E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		67EFCAE81CD680970057C5E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67EFCAED1CD680970057C5E3 /* TermometherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TermometherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		67EFCAF11CD680970057C5E3 /* TermometherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermometherTests.swift; sourceTree = "<group>"; };
+		67EFCAF31CD680970057C5E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67EFCAFC1CD687A00057C5E3 /* API_KEY */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = API_KEY; sourceTree = "<group>"; };
+		67EFCAFE1CD68B6D0057C5E3 /* WeatherDatasource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherDatasource.swift; sourceTree = "<group>"; };
+		67EFCB021CD69B4C0057C5E3 /* LBLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBLocation.swift; sourceTree = "<group>"; };
+		A7514C1FAFD33FC1F532DE9A /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		AA1618832A1774AABA8673B2 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		67EFCAD61CD680970057C5E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AB1E6BFC8F7254EAB548638 /* Pods.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67EFCAEA1CD680970057C5E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		15505E46A90B5F5001CF5796 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA1618832A1774AABA8673B2 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		67EFCAD01CD680960057C5E3 = {
+			isa = PBXGroup;
+			children = (
+				67EFCADB1CD680970057C5E3 /* Termomether */,
+				67EFCAF01CD680970057C5E3 /* TermometherTests */,
+				67EFCADA1CD680970057C5E3 /* Products */,
+				C7D28B06E6A02E2C57DB0E9D /* Pods */,
+				15505E46A90B5F5001CF5796 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		67EFCADA1CD680970057C5E3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				67EFCAD91CD680970057C5E3 /* Termomether.app */,
+				67EFCAED1CD680970057C5E3 /* TermometherTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		67EFCADB1CD680970057C5E3 /* Termomether */ = {
+			isa = PBXGroup;
+			children = (
+				67EFCADC1CD680970057C5E3 /* AppDelegate.swift */,
+				67EFCADE1CD680970057C5E3 /* ViewController.swift */,
+				67EFCAFE1CD68B6D0057C5E3 /* WeatherDatasource.swift */,
+				67EFCB021CD69B4C0057C5E3 /* LBLocation.swift */,
+				67EFCAFC1CD687A00057C5E3 /* API_KEY */,
+				67EFCAE01CD680970057C5E3 /* Main.storyboard */,
+				67EFCAE31CD680970057C5E3 /* Assets.xcassets */,
+				67EFCAE51CD680970057C5E3 /* LaunchScreen.storyboard */,
+				67EFCAE81CD680970057C5E3 /* Info.plist */,
+			);
+			path = Termomether;
+			sourceTree = "<group>";
+		};
+		67EFCAF01CD680970057C5E3 /* TermometherTests */ = {
+			isa = PBXGroup;
+			children = (
+				67EFCAF11CD680970057C5E3 /* TermometherTests.swift */,
+				67EFCAF31CD680970057C5E3 /* Info.plist */,
+			);
+			path = TermometherTests;
+			sourceTree = "<group>";
+		};
+		C7D28B06E6A02E2C57DB0E9D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				322DEA8048408A8A60898664 /* Pods.debug.xcconfig */,
+				A7514C1FAFD33FC1F532DE9A /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		67EFCAD81CD680970057C5E3 /* Termomether */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67EFCAF61CD680970057C5E3 /* Build configuration list for PBXNativeTarget "Termomether" */;
+			buildPhases = (
+				D400D60683E07F03E7B14F44 /* Check Pods Manifest.lock */,
+				67EFCAD51CD680970057C5E3 /* Sources */,
+				67EFCAD61CD680970057C5E3 /* Frameworks */,
+				67EFCAD71CD680970057C5E3 /* Resources */,
+				100BBC5BE012C72EA37051FD /* Embed Pods Frameworks */,
+				C24E2248E3AB65B78C85FECC /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Termomether;
+			productName = Termomether;
+			productReference = 67EFCAD91CD680970057C5E3 /* Termomether.app */;
+			productType = "com.apple.product-type.application";
+		};
+		67EFCAEC1CD680970057C5E3 /* TermometherTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67EFCAF91CD680970057C5E3 /* Build configuration list for PBXNativeTarget "TermometherTests" */;
+			buildPhases = (
+				67EFCAE91CD680970057C5E3 /* Sources */,
+				67EFCAEA1CD680970057C5E3 /* Frameworks */,
+				67EFCAEB1CD680970057C5E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				67EFCAEF1CD680970057C5E3 /* PBXTargetDependency */,
+			);
+			name = TermometherTests;
+			productName = TermometherTests;
+			productReference = 67EFCAED1CD680970057C5E3 /* TermometherTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		67EFCAD11CD680960057C5E3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Lucian Boboc";
+				TargetAttributes = {
+					67EFCAD81CD680970057C5E3 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					67EFCAEC1CD680970057C5E3 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 67EFCAD81CD680970057C5E3;
+					};
+				};
+			};
+			buildConfigurationList = 67EFCAD41CD680960057C5E3 /* Build configuration list for PBXProject "Termomether" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 67EFCAD01CD680960057C5E3;
+			productRefGroup = 67EFCADA1CD680970057C5E3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				67EFCAD81CD680970057C5E3 /* Termomether */,
+				67EFCAEC1CD680970057C5E3 /* TermometherTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		67EFCAD71CD680970057C5E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67EFCAE71CD680970057C5E3 /* LaunchScreen.storyboard in Resources */,
+				67EFCAFD1CD687A00057C5E3 /* API_KEY in Resources */,
+				67EFCAE41CD680970057C5E3 /* Assets.xcassets in Resources */,
+				67EFCAE21CD680970057C5E3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67EFCAEB1CD680970057C5E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		100BBC5BE012C72EA37051FD /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C24E2248E3AB65B78C85FECC /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D400D60683E07F03E7B14F44 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		67EFCAD51CD680970057C5E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67EFCAFF1CD68B6D0057C5E3 /* WeatherDatasource.swift in Sources */,
+				67EFCADF1CD680970057C5E3 /* ViewController.swift in Sources */,
+				67EFCB031CD69B4D0057C5E3 /* LBLocation.swift in Sources */,
+				67EFCADD1CD680970057C5E3 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67EFCAE91CD680970057C5E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67EFCAF21CD680970057C5E3 /* TermometherTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		67EFCAEF1CD680970057C5E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 67EFCAD81CD680970057C5E3 /* Termomether */;
+			targetProxy = 67EFCAEE1CD680970057C5E3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		67EFCAE01CD680970057C5E3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				67EFCAE11CD680970057C5E3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		67EFCAE51CD680970057C5E3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				67EFCAE61CD680970057C5E3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		67EFCAF41CD680970057C5E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		67EFCAF51CD680970057C5E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		67EFCAF71CD680970057C5E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 322DEA8048408A8A60898664 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Termomether/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lucianboboc.Termomether;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		67EFCAF81CD680970057C5E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7514C1FAFD33FC1F532DE9A /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Termomether/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lucianboboc.Termomether;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		67EFCAFA1CD680970057C5E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TermometherTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lucianboboc.TermometherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Termomether.app/Termomether";
+			};
+			name = Debug;
+		};
+		67EFCAFB1CD680970057C5E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TermometherTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lucianboboc.TermometherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Termomether.app/Termomether";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		67EFCAD41CD680960057C5E3 /* Build configuration list for PBXProject "Termomether" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67EFCAF41CD680970057C5E3 /* Debug */,
+				67EFCAF51CD680970057C5E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		67EFCAF61CD680970057C5E3 /* Build configuration list for PBXNativeTarget "Termomether" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67EFCAF71CD680970057C5E3 /* Debug */,
+				67EFCAF81CD680970057C5E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		67EFCAF91CD680970057C5E3 /* Build configuration list for PBXNativeTarget "TermometherTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67EFCAFA1CD680970057C5E3 /* Debug */,
+				67EFCAFB1CD680970057C5E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 67EFCAD11CD680960057C5E3 /* Project object */;
+}

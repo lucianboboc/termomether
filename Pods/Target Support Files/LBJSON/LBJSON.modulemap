@@ -1,0 +1,6 @@
+framework module LBJSON {
+  umbrella header "LBJSON-umbrella.h"
+
+  export *
+  module * { export * }
+}
