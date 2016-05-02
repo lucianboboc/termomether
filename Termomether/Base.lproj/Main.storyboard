@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,11 +17,101 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dRm-Fm-1vt" userLabel="topView">
+                                <rect key="frame" x="239" y="20" width="122" height="28"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="dRm-Fm-1vt" secondAttribute="height" multiplier="61:14" id="3Yy-t6-p0C"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="foo-B7-rf3" userLabel="temperature Total View">
+                                <rect key="frame" x="239" y="48" width="122" height="458"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tfg-ap-KZa" userLabel="temperature Value View">
+                                <rect key="frame" x="239" y="48" width="122" height="458"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xWB-NB-WDg" userLabel="bottomView">
+                                <rect key="frame" x="239" y="506" width="122" height="74"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="xWB-NB-WDg" secondAttribute="height" multiplier="122:74" id="yfO-6q-ngm"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="termomether" translatesAutoresizingMaskIntoConstraints="NO" id="WQd-EG-Pz4">
+                                <rect key="frame" x="239" y="20" width="122" height="560"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="WQd-EG-Pz4" secondAttribute="height" multiplier="61:280" id="1KV-8C-9vg"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l5z-0a-EG4">
+                                <rect key="frame" x="376" y="271" width="35.5" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D3o-x8-jhK">
+                                <rect key="frame" x="376" y="311" width="35.5" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ef-M3-pAk">
+                                <rect key="frame" x="203.5" y="291.5" width="35.5" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="D3o-x8-jhK" firstAttribute="leading" secondItem="WQd-EG-Pz4" secondAttribute="trailing" constant="15" id="0HL-6T-7Tk"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="WQd-EG-Pz4" secondAttribute="bottom" constant="20" id="1aQ-xc-1yC"/>
+                            <constraint firstItem="WQd-EG-Pz4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="7lc-3k-EFI"/>
+                            <constraint firstItem="foo-B7-rf3" firstAttribute="top" secondItem="dRm-Fm-1vt" secondAttribute="bottom" id="84x-qL-1c6"/>
+                            <constraint firstItem="xWB-NB-WDg" firstAttribute="bottom" secondItem="WQd-EG-Pz4" secondAttribute="bottom" id="CYk-Np-jFr"/>
+                            <constraint firstItem="Tfg-ap-KZa" firstAttribute="leading" secondItem="WQd-EG-Pz4" secondAttribute="leading" id="J34-cf-ot9"/>
+                            <constraint firstItem="l5z-0a-EG4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-20" id="JRS-0a-IwX"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="l5z-0a-EG4" secondAttribute="trailing" priority="999" constant="2" id="JYm-0D-CR3"/>
+                            <constraint firstItem="D3o-x8-jhK" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="20" id="Lsk-qp-LSJ"/>
+                            <constraint firstItem="xWB-NB-WDg" firstAttribute="leading" secondItem="WQd-EG-Pz4" secondAttribute="leading" id="QAI-Lf-SVa"/>
+                            <constraint firstItem="l5z-0a-EG4" firstAttribute="leading" secondItem="WQd-EG-Pz4" secondAttribute="trailing" constant="15" id="UO2-AI-9hg"/>
+                            <constraint firstItem="foo-B7-rf3" firstAttribute="leading" secondItem="WQd-EG-Pz4" secondAttribute="leading" id="VDY-ic-zMh"/>
+                            <constraint firstItem="WQd-EG-Pz4" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" id="VYq-ng-rRX"/>
+                            <constraint firstItem="WQd-EG-Pz4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="a01-ao-SZC"/>
+                            <constraint firstItem="xWB-NB-WDg" firstAttribute="top" secondItem="Tfg-ap-KZa" secondAttribute="bottom" id="afB-6f-jqr"/>
+                            <constraint firstItem="xWB-NB-WDg" firstAttribute="top" secondItem="foo-B7-rf3" secondAttribute="bottom" id="agG-Qp-l4x"/>
+                            <constraint firstItem="Tfg-ap-KZa" firstAttribute="trailing" secondItem="WQd-EG-Pz4" secondAttribute="trailing" id="bee-Fg-hsm"/>
+                            <constraint firstItem="Tfg-ap-KZa" firstAttribute="top" secondItem="dRm-Fm-1vt" secondAttribute="bottom" id="hnT-k5-aVS"/>
+                            <constraint firstItem="dRm-Fm-1vt" firstAttribute="top" secondItem="WQd-EG-Pz4" secondAttribute="top" id="hnm-Oz-nMy"/>
+                            <constraint firstItem="dRm-Fm-1vt" firstAttribute="trailing" secondItem="WQd-EG-Pz4" secondAttribute="trailing" id="mY7-sX-azb"/>
+                            <constraint firstItem="6Ef-M3-pAk" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="p4p-QY-WGC"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="D3o-x8-jhK" secondAttribute="trailing" priority="999" constant="2" id="qtz-wq-Awn"/>
+                            <constraint firstItem="6Ef-M3-pAk" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leading" priority="999" constant="2" id="sOv-1w-UIf"/>
+                            <constraint firstItem="xWB-NB-WDg" firstAttribute="trailing" secondItem="WQd-EG-Pz4" secondAttribute="trailing" id="txQ-bn-A7N"/>
+                            <constraint firstItem="foo-B7-rf3" firstAttribute="trailing" secondItem="WQd-EG-Pz4" secondAttribute="trailing" id="wJS-rf-yBX"/>
+                            <constraint firstItem="dRm-Fm-1vt" firstAttribute="leading" secondItem="WQd-EG-Pz4" secondAttribute="leading" id="z99-YP-gnM"/>
+                            <constraint firstItem="WQd-EG-Pz4" firstAttribute="leading" secondItem="6Ef-M3-pAk" secondAttribute="trailing" id="zJ5-ED-hZF"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="celsiusLabel" destination="l5z-0a-EG4" id="Tqe-mV-2Kc"/>
+                        <outlet property="cityLabel" destination="6Ef-M3-pAk" id="wqK-lm-7yb"/>
+                        <outlet property="farenheitLabel" destination="D3o-x8-jhK" id="uie-zp-t9R"/>
+                        <outlet property="temperatureTotalView" destination="foo-B7-rf3" id="FS8-kF-7GT"/>
+                        <outlet property="temperatureValueView" destination="Tfg-ap-KZa" id="WFc-lF-ec0"/>
+                        <outlet property="termometherView" destination="WQd-EG-Pz4" id="Fie-fO-s5H"/>
+                        <outlet property="topConstraint" destination="hnT-k5-aVS" id="psX-tm-b82"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="288" y="234"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="termomether" width="122" height="644"/>
+    </resources>
 </document>
