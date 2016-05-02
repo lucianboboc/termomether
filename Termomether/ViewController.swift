@@ -19,8 +19,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var temperatureValueView:UIView!
     @IBOutlet weak var termometherView:UIImageView!
     
-    @IBOutlet weak var celsiusLabel:UILabel!
-    @IBOutlet weak var farenheitLabel:UILabel!
     @IBOutlet weak var cityLabel:UILabel!
     
     override func viewDidLoad() {
@@ -29,8 +27,6 @@ class ViewController: UIViewController {
         location = LBLocation(vc: self)
         topConstraint.constant = 0
         self.temperatureValueView.backgroundColor = UIColor.whiteColor()
-        self.celsiusLabel.text = ""
-        self.farenheitLabel.text = ""
         self.cityLabel.text = ""
     }
     
@@ -66,21 +62,20 @@ class ViewController: UIViewController {
                 print(farenheit!)
                 
                 NSOperationQueue.mainQueue().addOperationWithBlock {
-                    self.configureViewWithCelsius(Double(celsius!), farenheitValue: Double(farenheit!))
+                    self.configureViewWithCelsius(Double(celsius!))
                     self.configureCity(city)
                 }
             }
         }
     }
     
-    func configureViewWithCelsius(celsiusValue:Double?, farenheitValue:Double?) {
+    func configureViewWithCelsius(celsiusValue:Double?) {
         
-        if let cel = celsiusValue, let far = farenheitValue {
+        if let cel = celsiusValue {
             let celsius = CGFloat(cel)
-            let farenheit = CGFloat(far)
             
-            let minusDegreesValue:CGFloat = 10.0
-            let totalDegreesValue:CGFloat = 50.0
+            let minusDegreesValue:CGFloat = 40.0
+            let totalDegreesValue:CGFloat = 100.0
             let tempValue:CGFloat = celsius + minusDegreesValue
             let procent = tempValue * 100.0 / totalDegreesValue
             
@@ -90,9 +85,6 @@ class ViewController: UIViewController {
                 self.topConstraint.constant = self.temperatureTotalView.frame.size.height - distance
                 self.temperatureValueView.backgroundColor = UIColor.redColor()
             })
-            
-            self.celsiusLabel.text = "\(celsius) Celsius"
-            self.farenheitLabel.text = "\(farenheit) Farenheit"
         }
     }
     
